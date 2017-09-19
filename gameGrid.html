@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sudoku</title>
+	<link rel="JavaScript" href="genGrid.js">
+	<script src="genGrid.js"></script>
+	<script src="model.js"></script>
+	<script src="timer.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="checkpoint" href="checkpoint.html">
+</head>
+<canvas id="myCanvas" width="2000" height="150"></canvas>
+<!--<h1>Sudoku</h1>-->
+
+<body onload="drawBoard(); startTimer(); endGame(); drawCanvas()"><!--call drawBoard()-->
+<audio controls autoplay>
+	<source src="GoodVibrations.mp3">
+</audio>
+<br>
+<select id="mySelect" onchange="difficulty(); endGame()">
+	<option value="easy1">Easy 1</option>
+	<option value="easy2">Easy 2</option>
+	<option value="medium1">Medium 1</option>
+	<option value="medium2">Medium 2</option>
+	<option value="hard1">Hard 1</option>
+	<option value="hard2">Hard 2</option>
+</select>
+
+<p>Timer: </p>
+<div id="time">
+0:00
+</div>
+<div id="gameboard">
+</div>
+<h2>Column: </h2>
+<h2 id="col">
+</h2>
+<h2>Row: </h2>
+<h2 id="row">
+</h2>
+<div id="solution">
+Easy 1 Solution<br>
+<img src="easySolution.jpg" alt="Easy Solution">
+</div>
+</body>
+</html>

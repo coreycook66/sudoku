@@ -1,0 +1,38 @@
+h1 {
+	font-size: 5em;
+}
+.sudoku {
+	border-collapse: collapse;
+	empty-cells: show;
+	font-size: 4em;
+}
+.sudoku colgroup, .sudoku tbody {
+	border: 9px solid black;
+}
+.sudoku td {
+	border: 5px solid black;
+	width:1em;
+	height:1em;
+	text-align:center;
+}
+#loginStatus {
+	color: red;
+}
+input {
+	width: 64px;
+	height: 70px;
+	text-align: center;
+	font-size: 50px;
+	
+}
+select {
+	font-size: 1em;
+}
+#solution {
+	float: right;
+	display: inline;
+	margin-top: -600px;
+	position: relative;
+	z-index: -1;
+	size: 100px;
+}
